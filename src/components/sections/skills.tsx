@@ -36,19 +36,16 @@ const WORKFLOWS = [
   'Integração com APIs REST utilizando Axios',
   'Tipagem e segurança de dados com TypeScript',
   'Modelagem de banco de dados (MySQL/PostgreSQL)',
-  'Versionamento de código com Git (feature branches)',
+  'Versionamento de código com Git',
 ];
 
 export default function Skills() {
   return (
-    <section
-      id='skills'
-      className='w-full min-h-screen flex flex-col justify-center p-12 gap-12'
-    >
-      <div className='flex flex-col gap-6'>
+    <section id='skills' className='section-style gap-12'>
+      <div className='flex flex-col gap-8'>
         <h2 className='text-4xl uppercase font-bold text-indigo'>Skills</h2>
 
-        <div>
+        <div className='mb-12'>
           <h3 className='text-2xl font-semibold uppercase text-purple'>
             Linguagens e Ferramentas de Programação
           </h3>

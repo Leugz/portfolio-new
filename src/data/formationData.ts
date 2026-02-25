@@ -1,4 +1,4 @@
-interface formationInterface {
+interface formationProps {
   institution: string;
   type: string;
   course: string;
@@ -6,7 +6,7 @@ interface formationInterface {
   time?: string;
 }
 
-export const formationData: formationInterface[] = [
+export const formationData: formationProps[] = [
   {
     institution: 'Uninassau',
     type: 'Tecnólogo',

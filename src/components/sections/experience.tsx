@@ -2,12 +2,9 @@ import { experienceData } from '@/data/experienceData';
 
 export default function Experience() {
   return (
-    <section
-      id='exp'
-      className='w-full min-h-screen flex flex-col justify-center p-12 gap-12'
-    >
+    <section id='exp' className='section-style gap-12'>
       <h2 className='text-4xl uppercase font-bold'>Experiência</h2>
-      <div className='grid grid-cols-2 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
         {experienceData.map((exp) => (
           <div key={exp.role} className='flex flex-col gap-6'>
             <div>

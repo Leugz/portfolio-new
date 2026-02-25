@@ -24,10 +24,7 @@ const FormationCard = ({
 
 export default function Formation() {
   return (
-    <section
-      id='formation'
-      className='w-full min-h-screen flex flex-col justify-center p-12 gap-12'
-    >
+    <section id='formation' className='section-style gap-12'>
       <h2 className='text-4xl uppercase font-bold'>Formação</h2>
       <div className='flex flex-col gap-12'>
         {[...formationData].reverse().map((formation, idx) => (
