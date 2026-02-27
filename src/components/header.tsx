@@ -5,7 +5,7 @@ import { MdMenu } from 'react-icons/md';
 
 export default function Header({ onToggle }: { onToggle: () => void }) {
   return (
-    <header className='bg-purple md:hidden p-4 flex flex-row justify-between text-center'>
+    <header className='bg-purple md:hidden px-6 py-4 flex flex-row justify-between text-center'>
       <Link href='#' className='font-bold'>
         Miguel Ribeiro
       </Link>

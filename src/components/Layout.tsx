@@ -16,7 +16,7 @@ export default function Layout({ children }: { children?: ReactNode }) {
 
         {/* modal */}
         <div
-          className={`fixed z-10 left-0 top-0 w-full h-full overflow-auto bg-black/40 transition-opacity duration-300 ${toggleSide ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+          className={`fixed z-10 left-0 top-0 md:hidden w-full h-full overflow-auto bg-black/40 transition-opacity duration-300 ${toggleSide ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
           onClick={() => setToggleSide(!toggleSide)}
         >
           <Sidebar

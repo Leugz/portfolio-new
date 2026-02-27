@@ -4,12 +4,12 @@ import { MdDownload, MdEmail } from 'react-icons/md';
 export default function Introduction() {
   return (
     <section id='intro' className='section-style'>
-      <div className='flex flex-col gap-3'>
-        <h1 className='text-7xl font-bold uppercase'>
+      <div className='flex flex-col gap-3 items-center text-center md:items-start md:text-left'>
+        <h1 className='text-4xl md:text-7xl font-bold uppercase'>
           Miguel <span className='text-purple'>Ribeiro</span>
         </h1>
         <h2 className='md:text-xl uppercase text-gray-400'>
-          Recife · Pernambuco ·{' '}
+          Recife · Pernambuco<span className='hidden md:inline'>·</span>{' '}
           <a
             href='mailto:miguelribeiro2509@proton.me'
             className='underline text-purple font-semibold hover:text-indigo transition-colors duration-150'
@@ -19,10 +19,10 @@ export default function Introduction() {
         </h2>
       </div>
 
-      <div className='flex flex-col gap-12 py-12 max-w-250'>
+      <div className='flex flex-col gap-12 py-12 max-w-250 items-center text-left md:items-start'>
         <p>
-          Desenvolvedor Júnior atualmente especializado em front-end. Possuo
-          experiência no desenvolvimento de aplicações web e modelagem de
+          Sou um desenvolvedor Júnior atualmente especializado em front-end.
+          Possuo experiência no desenvolvimento de aplicações web e modelagem de
           sistemas, com maior expertise na construção de aplicações utilizando
           NextJs. Também costumo me atentar à aplicação de boas práticas de
           organização, versionamento e estruturação de projetos.
@@ -36,7 +36,7 @@ export default function Introduction() {
         </p>
       </div>
 
-      <div className='flex flex-row gap-10'>
+      <div className='flex flex-row justify-around md:justify-start md:gap-10'>
         {[
           {
             name: 'Github',
